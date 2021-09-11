@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,26 +17,30 @@
 
 <body>
     <div id="bloc_page">
-       <header><!--Header:logo, menu-->
-        <div> 
+       <header><!--Header:logo, nav-->
+        <div class= "header_bloc"> 
             <a href="#">
                 <img src="images/logo/Reservia.svg" alt="logo du site reservia" id="logo"/>
             </a> 
-        </div>
+        
             <!--Navigation-->
           <nav>
+            <div class="navigation_principale">
              <ul> 
                 <li><a href="#accommodation" class="border-one">Hébergements</a></li>
-                <li><a href="#activities" class="border-two">Activités</a></li>
-                <li><a href="#" class="sign-up">S'inscrire</a></li>
-             </ul> 
-         </nav>          
+                <li><a href="#activities" class="border-two">Activités</a></li>      
+             </ul>
+            </div>
+                <a href="#" class="sign-up">S'inscrire</a>
+          </nav>     
+        </div>
+                  
        </header>
 
     <main><!--3 Sections-->
         <section id="search"><!--1. recherche et filtres-->
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>     
+            <p class="p_one">En plein centre ville ou en pleine nature</p>     
             <form method="post" action="traitement.php"> 
                 <div class="form">
                 <div class="map">
@@ -94,7 +97,7 @@
                  <div class="info-sign">
                   <i class="fas fa-info" ></i> 
                  </div> 
-                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                 <p class="p_two">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section> 
 
@@ -107,7 +110,7 @@
                     <img class="picture" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
                     alt="photo auberge de la cannebiere">
                       <div class="bloc-legende-H">
-                        <p class="legende">Auberge La Cannebière</p>
+                        <p class="legende_h">Auberge La Cannebière</p>
                         <p>Nuit à partir de 25 €</p> 
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -121,7 +124,7 @@
                     <img class="picture" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
                     alt="photo hotel du port">
                       <div class="bloc-legende-H">
-                        <p class="legende">Hôtel du port</p>
+                        <p class="legende_h">Hôtel du port</p>
                         <p>Nuit à partir de 25 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -135,7 +138,7 @@
                     <img class="picture" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
                     alt="photo hotel les mouettes">
                        <div class="bloc-legende-H">
-                        <p class="legende">Hôtel Les mouettes</p>
+                        <p class="legende_h">Hôtel Les mouettes</p>
                         <p>Nuit à partir de 25 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -149,7 +152,7 @@
                     <img class="picture" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
                     alt="photo hotel de la mer">
                        <div class="bloc-legende-H">
-                        <p class="legende">Hôtel de la mer</p>
+                        <p class="legende_h">Hôtel de la mer</p>
                         <p>Nuit à partir de 25 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -163,7 +166,7 @@
                     <img class="picture" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
                     alt="photo hotel auberge le panier">
                        <div class="bloc-legende-H">
-                        <p class="legende">Auberge Le Panier</p>
+                        <p class="legende_h">Auberge Le Panier</p>
                         <p>Nuit à partir de 25 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -177,7 +180,7 @@
                     <img class="picture" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
                      alt="photo hotel chez Amina">
                        <div class="bloc-legende-H">
-                        <p class="legende">Hôtel chez Amina</p>
+                        <p class="legende_h">Hôtel chez Amina</p>
                         <p>Nuit à partir de 25 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -202,7 +205,7 @@
                     <img class="image" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                     alt="photo Hotel le soleil du matin"/>
                       <div class="bloc-legende">
-                        <p class="legende"> Hôtel Le soleil du matin</p>
+                        <p class="legende"> Hôtel Le soleil du<br/>matin</p>
                         <p>Nuit à partir de 128 €</p> 
                         <div class="stars">    
                          <i class="fas fa-star"></i>
@@ -234,7 +237,7 @@
                     <img class="image3" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
                     alt="photo Hotel tout bleu et blanc"/>
                        <div class="bloc-legende">
-                        <p class="legende">Hôtel Tout bleu et Blanc</p>
+                        <p class="legende">Hôtel Tout bleu et<br/>Blanc</p>
                         <p>Nuit à partir de 68 €</p>
                          <div class="stars">
                           <i class="fas fa-star"></i>
@@ -251,43 +254,43 @@
 
         <!--Section 3. Activités-->
         <section id="activities">
-            <h2>Activités à Marseille</h2>
+            <h2 id="activities_title">Activités à Marseille</h2>
             <div id="container">
                 <a href="#" class="box-A"><!--image_large et légende-->
                 <img class="large_image" src="./images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                 alt="photo port Marseille">
-                <p class="legende">Vieux Port</p>
+                <p class="legende_L">Vieux Port</p>
                 </a>
 
               <div class="small-box1"><!--container 1er groupe 2 petites images-->
                 <a href="#" class="box-B1"><!--petite_image et légende-->
-                <img class="small_image" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                <img class="small_image_a" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="photo Fort de Pomègues">
-                <p class="legende">Fort de Pomègues</p>
+                <p class="legende_L">Fort de Pomègues</p>
                 </a>
                 <a href="#" class="box-B1">
-                <img class="small_image" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                <img class="small_image_b" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                 alt="photo Iles du Frioul">
-                <p class="legende">Îles du Frioul</p>
+                <p class="legende_L">Îles du Frioul</p>
                 </a>   
               </div>
 
                 <a href="#" class="box-A"><!--image_large et légende-->
                 <img class="large_image" src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="photo Parc national des Calanques">
-                <p class=legende>Parc National des Calanques</p>
+                <p class=legende_L>Parc National des Calanques</p>
                 </a>
 
               <div class="small-box2"><!--container 2e groupe 2 petites images-->
                 <a href="#" class="box-B2"><!--petite_image et légende-->
                 <img class="small_image" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                 alt="photo notre Dame de la garde">
-                <p class="legende">Notre Dame-de-la-Garde</p>
+                <p class="legende_L">Notre Dame-de-la-Garde</p>
                 </a>    
                 <a href="#" class="box-B2">
                 <img class="small_image" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                 alt="photo parc Longchamp">
-                <p class="legende">Parc Longchamp</p>
+                <p class="legende_L">Parc Longchamp</p>
                 </a>
               </div>
             </div>   
@@ -295,20 +298,20 @@
     </main> 
 
         <footer><!--Footer-->
-           <div class="footer-container-1">
+           <div class="footer_container_1">
             <h3>A propos</h3>
             <a href="#">Fonctionnement du site</a>
             <a href="#">Conditions générales de vente</a>
             <a href="#">Données et confidentialité</a>
             </div>
 
-           <div class="footer-container-2">
+           <div class="footer_container_2">
             <h3>Nos hébergements</h3>
             <a href="#">Charte qualité</a>
             <a href="#">Soumettre votre hôtel</a>
            </div>
 
-           <div class="footer-container-3">
+           <div class="footer_container_3">
             <h3>Assistance</h3>
             <a href="#">Centre d'aide</a>
             <a href="#">Nous contacter</a>
