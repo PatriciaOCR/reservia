@@ -1,38 +1,38 @@
-/* Feuille de style */
-#bloc_page{
-  margin: 0 50px 30px;
+/* Feuille de style desktop*/
+
+/*url police raleway*/
+ @import "https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap";
+
+html body{
+  font-family: Raleway;
+ }
+main{
+  margin: 0 30px 50px;
 }
 /*Header*/
 .header_bloc{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
 } 
-#logo:nth-child(1){
-  order: 1;
-}
-.navigation_principale{
-  
-}
 nav{
   display: flex;
   align-items: center;
 }
 nav ul{
   display: flex;
-  list-style-type: none; 
+  list-style-type: none;  
 }
 nav a{
   padding: 30px;
   font-size: 0.9em;
   text-decoration: none;
 }
-.border-one:nth-child(2){
-  order: 2;
-}
 .border-one{
   bottom: 20px;
-  border-top: transparent;
+  border-top: green;
   color: black;
 }
 .border-one:hover{
@@ -40,10 +40,8 @@ nav a{
   border-width: 2px;
   color: #0065FC;
 }
-.border-one:nth-child(3){
-  order: 3;
-}
 .border-two{
+  bottom:20px;
   border-top: transparent;
   color: black;
 }
@@ -52,9 +50,6 @@ nav a{
   border-width: 2px;
   color: #0065FC;
 }
-.sign-up:nth-child(4){
-  order: 4;
-}
 .sign-up{
   font-size: 0.9em;
   color: #0065FC;
@@ -62,6 +57,7 @@ nav a{
 .sign-up:hover{
   color: #DEEBFF;
 }
+
 /*Section de recherche*/
 h1{
   font-size: 1.2em;
@@ -135,7 +131,7 @@ a{
   border-color: #0065FC;
   font-weight: bold;
 }
-.icon{
+.filter-group .icon{
   display: flex;
   align-items:center;
   font-size: 0.6em;
@@ -146,8 +142,12 @@ a{
   border-radius : 50px;
   background-color: #DEEBFF 
   }
-  h3{
-  font-size: 1em;
+.filter-group:hover .icon{
+  background-color: #0065FC;
+  color:  #DEEBFF;
+  }
+h3{
+  font-size: 0.9em;
 } 
 #information{
   display: flex;  
@@ -192,7 +192,7 @@ h2{
 #cards{
   display: flex;
   flex-wrap: wrap;
-  margin: -15px 0 0 15px; 
+  margin: -10px 0 0 15px; 
 }
 .cardsbox{  
   display:flex;
@@ -208,7 +208,7 @@ h2{
   height: 170px;
 }
 .cardsbox:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .bloc-legende-H{
   padding-left: 10px;
@@ -246,7 +246,8 @@ p{
 }
 #show:hover{
   color: #0065FC;
-}           
+}   
+
 /*Aside*/
 aside{
   display: flex;
@@ -284,7 +285,7 @@ aside{
   margin-bottom: 20px; 
 }
 .popbox:hover{
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .image{
   object-fit: cover;
@@ -311,7 +312,6 @@ aside{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  flex-wrap: wrap; 
   padding-left: 28px;
 }
 .legende{
@@ -349,7 +349,7 @@ aside{
   padding-bottom: 10px;  
 }
 .box-A:hover{
-  transform: scale(1.05)
+  transform: scale(1.1)
 }
 .small-box1{
   display: flex;
@@ -374,10 +374,10 @@ aside{
   padding-bottom: 10px;
 }
 .box-B1:hover{
-  transform: scale(1.05)
+  transform: scale(1.1)
 }
 .box-B2:hover{
-  transform: scale(1.05)
+  transform: scale(1.1)
 }
 .small_image{
   object-fit: cover;
@@ -415,30 +415,31 @@ aside{
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
 /*Footer*/
 footer{
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   background-color: #F2F2F2;
-  width: 94%;
-  margin: 20px 0 40px;
-  padding: 15px 40px 40px ;
+  width: 100%;
+  padding: 60px 0 70px ;
 }
 .footer_container_1{
  display: flex;
  flex-direction: column;
- padding-right: 280px;
+ padding-left: 40px;
+ padding-right: 310px;
 }
 .footer_container_2{
   display: flex;
   flex-direction: column;
-  padding-right: 280px;
+  padding-right: 310px;
  }
  .footer_container_3{
   display: flex;
   flex-direction: column;
-  padding-right: 280px;
+  padding-right: 310px;
  }
  a{
    font-size: 0.9em;

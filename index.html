@@ -4,11 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css" /> <!--Pour tout le monde-->
-    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
-    <!--Pour ceux qui ont une résolution inférieure à 1280px-->
+    <link rel="stylesheet" media="screen and (max-width: 680px)" href="mobile.css"/><!--petite résolution-->
+    <link rel="stylesheet" media="screen and (min-width: 681px) and (max-width: 1280px)" href="tablette.css"/>
+    <!--résolution supérieure à 481px et inférieure à 1280px-->
 
-    <!--raleway-->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap" rel="stylesheet">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/>
 
@@ -16,11 +15,10 @@
 </head>
 
 <body>
-    <div id="bloc_page">
-       <header><!--Header:logo, nav-->
+      <header><!--Header:logo, nav-->
         <div class= "header_bloc"> 
             <a href="#">
-                <img src="images/logo/Reservia.svg" alt="logo du site reservia" id="logo"/>
+                <img class="reservia_logo" src="images/logo/Reservia.svg" alt="logo du site reservia"/>
             </a> 
         
             <!--Navigation-->
@@ -33,9 +31,8 @@
             </div>
                 <a href="#" class="sign-up">S'inscrire</a>
           </nav>     
-        </div>
-                  
-       </header>
+        </div>          
+      </header>
 
     <main><!--3 Sections-->
         <section id="search"><!--1. recherche et filtres-->
@@ -55,7 +52,6 @@
                 <div class="title">
                 <h3>Filtres</h3>
                 </div>
-
                 <a href="#">
                 <div class="filter-group">
                  <div class="icon">
@@ -91,6 +87,7 @@
                  <h3>Animaux autorisés</h3>
                 </div> 
                 </a>
+               
             </div>
                
             <div id="information">
@@ -223,7 +220,7 @@
                       <div class="bloc-legende">
                         <p class="legende">Au coeur de l'eau Chambre d'hôtes</p>
                         <p>Nuit à partir de 71 €</p>
-                         <div class="stars">
+                          <div class="stars">
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
                           <i class="fas fa-star"></i>
@@ -278,7 +275,7 @@
                 <a href="#" class="box-A"><!--image_large et légende-->
                 <img class="large_image" src="./images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="photo Parc national des Calanques">
-                <p class=legende_L>Parc National des Calanques</p>
+                <p class="legende_L">Parc National des Calanques</p>
                 </a>
 
               <div class="small-box2"><!--container 2e groupe 2 petites images-->
@@ -297,26 +294,25 @@
         </section>    
     </main> 
 
-        <footer><!--Footer-->
+      <footer><!--Footer-->
            <div class="footer_container_1">
             <h3>A propos</h3>
-            <a href="#">Fonctionnement du site</a>
-            <a href="#">Conditions générales de vente</a>
-            <a href="#">Données et confidentialité</a>
+            <a href="#"><small>Fonctionnement du site</small></a>
+            <a href="#"><small>Conditions générales de vente</small></a>
+            <a href="#"><small>Données et confidentialité</small></a>
             </div>
 
            <div class="footer_container_2">
             <h3>Nos hébergements</h3>
-            <a href="#">Charte qualité</a>
-            <a href="#">Soumettre votre hôtel</a>
+            <a href="#"><small>Charte qualité</small></a>
+            <a href="#"><small>Soumettre votre hôtel</small></a>
            </div>
 
            <div class="footer_container_3">
             <h3>Assistance</h3>
-            <a href="#">Centre d'aide</a>
-            <a href="#">Nous contacter</a>
+            <a href="#"><small>Centre d'aide</small></a>
+            <a href="#"><small>Nous contacter</small></a>
            </div>
-        </footer>
-    </div>
+      </footer>
 </body>  
 </html>
