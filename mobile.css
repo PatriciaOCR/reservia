@@ -1,0 +1,93 @@
+/*règles css mobiles*/
+@media screen and (max-width: 480px)
+{ 
+  html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+  }
+  /*Header*/
+  .header_bloc{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    }
+  .header_bloc .reservia_logo{
+    order: 1;
+    }
+  .header_bloc .navigation_principale{
+    order: 3;
+    flex-wrap: wrap;
+    }
+  .header_bloc .sign-up{  
+    order: 2; 
+    position: absolute;
+    flex-wrap: wrap; 
+    }   
+
+  /*Section 1. recherche et filtres*/
+  #search{
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%
+ }
+
+  /*Section 2. Hébergement*/
+  #hostels-wrapper{
+    width:100%;
+    justify-content: center;
+  }
+  #cards{
+    flex-wrap: wrap;;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  aside{
+    width: 100%;
+    justify-content: center;;
+  }
+  #popcards{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+
+  }
+
+  /*Section 3. activités*/
+  #activities{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+
+  }
+  footer{
+    width: 100%;
+    justify-content: center;
+  }
+  .footer_container_1{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_container_2{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_container_3{
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}

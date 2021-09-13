@@ -1,0 +1,9 @@
+/*règles css tablettes*/
+@media screen and (min-width: 1024px) and (max-width: 1280px)
+{ 
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}
