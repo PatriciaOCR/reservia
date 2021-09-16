@@ -1,38 +1,65 @@
 /*règles css mobiles*/
-@media screen and (max-width: 480px)
-{ 
   html, body{
+    font-family: 'Raleway', sans-serif;
     margin: 0;
-    padding: 0;
-    width: 100%;
-    
+    padding: 0;  
+    flex: none;
   }
   /*Header*/
   .header_bloc{
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
     }
   .header_bloc .reservia_logo{
     order: 1;
     }
-  .header_bloc .navigation_principale{
+  .header_bloc .principale{
+    display: flex;
     order: 3;
-    flex-wrap: wrap;
+    margin-left: 0;
+    align-items: flex-start;
     }
-  .header_bloc .sign-up{  
+  nav ul{
+    padding-left: 0;
+    } 
+  .header_bloc .sign-up{ ; 
     order: 2; 
-    position: absolute;
-    flex-wrap: wrap; 
-    }   
-
+    }  
+  .border-one{
+    border-bottom: solid #F2F2F2;
+    margin-left: 0;
+    padding-bottom: 14px;   
+  }
+  .border-one:hover{
+    border-top: none;
+    border-bottom: solid #0065FC;
+    border-width: 2px;
+    color: #0065FC;
+  }
+  .border-two{
+    border-bottom: solid #F2F2F2;
+    padding-left: 20px;
+    padding-bottom: 14px; 
+  }
+  .border-two:hover{
+    border-top: none;
+    border-bottom: solid #0065FC;
+    border-width: 2px;
+    color: #0065FC;
+  }
   /*Section 1. recherche et filtres*/
+  h1{
+    margin-top: 40px;
+  }
+  .p_one{
+
+  }
   #search{
     flex-wrap: wrap;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%
- }
+  }
 
   /*Section 2. Hébergement*/
   #hostels-wrapper{
@@ -90,4 +117,4 @@
   }
 
 
-}
+

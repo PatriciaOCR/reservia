@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css" /> <!--Pour tout le monde-->
-    <link rel="stylesheet" media="screen and (max-width: 480px)" href="mobile.css"/><!--petite résolution-->
+    <link rel="stylesheet" media="screen and (max-width: 765px)" href="mobile.css"/><!--petite résolution-->
     <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1280px)" href="tablette.css"/>
     <!--résolution supérieure à 481px et inférieure à 1280px-->
 
@@ -17,22 +17,21 @@
 </head>
 
 <body>
-      <header><!--Header:logo, nav-->
+  <div id ="bloc_page">
+      <header><!--Header:logo, menu, nav-->
         <div class= "header_bloc"> 
             <a href="#">
                 <img class="reservia_logo" src="images/logo/Reservia.svg" alt="logo du site reservia"/>
             </a> 
         
-            <!--Navigation-->
-          <nav>
-            <div class="navigation_principale">
+          <!--Navigation-->
+          <nav class="principale">
              <ul> 
                 <li><a href="#accommodation" class="border-one">Hébergements</a></li>
                 <li><a href="#activities" class="border-two">Activités</a></li>      
              </ul>
-            </div>
-                <a href="#" class="sign-up">S'inscrire</a>
-          </nav>     
+          </nav> 
+                <a href="#" class="sign-up">S'inscrire</a> 
         </div>          
       </header>
 
@@ -115,7 +114,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star" style="color: #F2F2F2;"></i>
+                        <i class="fas fa-star" style="color: #f2f2f2;"></i>
                       </div> 
                     </a>
                 
@@ -128,6 +127,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
+
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                       </div>   
@@ -217,10 +217,10 @@
                     </a>
 
                     <a href="#" class="popbox">
-                    <img class="image2" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                    <img class="image" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="photo Hotel au coeur de l'eau"/>
                       <div class="bloc-legende">
-                        <p class="legende">Au coeur de l'eau Chambre d'hôtes</p>
+                        <p class="legende">Au coeur de l'eau<br/>Chambre d'hôtes</p>
                         <p>Nuit à partir de 71 €</p>
                           <div class="stars">
                           <i class="fas fa-star"></i>
@@ -233,7 +233,7 @@
                     </a>
 
                     <a href="#" class="popbox">
-                    <img class="image3" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                    <img class="image" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
                     alt="photo Hotel tout bleu et blanc"/>
                        <div class="bloc-legende">
                         <p class="legende">Hôtel Tout bleu et<br/>Blanc</p>
@@ -295,7 +295,7 @@
             </div>   
         </section>    
     </main> 
-
+  </div>
       <footer><!--Footer-->
            <div class="footer_container_1">
             <h3>A propos</h3>
