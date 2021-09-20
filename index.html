@@ -4,9 +4,9 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" href="style.css" /> <!--Pour tout le monde-->
-    <link rel="stylesheet" media="screen and (max-width: 765px)" href="mobile.css"/><!--petite résolution-->
-    <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1280px)" href="tablette.css"/>
-    <!--résolution supérieure à 481px et inférieure à 1280px-->
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="mobile.css"/><!--petite résolution-->
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1280px)" href="tablette.css"/>
+    <!--résolution supérieure à 768px et inférieure à 1280px-->
 
     <!--police raleway-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div id ="bloc_page">
+  <div id ="bloc_principal"><!--Header et Main-->
       <header><!--Header:logo, menu, nav-->
         <div class= "header_bloc"> 
             <a href="#">
@@ -40,20 +40,21 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p class="p_one">En plein centre ville ou en pleine nature</p>     
             <form method="post" action="traitement.php"> 
-                <div class="form">
+              <div class="form">
                 <div class="map">
                 <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <input type="search" name="ville" value="Marseille, France">
-                 <button class="test" type="submit">Rechercher</button>
-                </div>  
+                <input type="search" name="ville" placeholder="Marseille, France">
+                 <button class="test" type="submit"><span class="search_text">Rechercher</span>
+                 <i class="fas fa-search"></i></button>
+              </div>  
             </form>
     
             <div id="filters">
                 <div class="title">
                 <h3>Filtres</h3>
                 </div>
-                <a href="#">
+                <a href="#" class="economique">
                 <div class="filter-group">
                  <div class="icon">
                   <i class="fas fa-money-bill-wave-alt"></i>
@@ -62,7 +63,7 @@
                 </div>
                 </a>
 
-                <a href="#">
+                <a href="#" class="familial">
                 <div class="filter-group">
                  <div class="icon">
                   <i class="fas fa-child"></i> 
@@ -71,7 +72,7 @@
                 </div>
                 </a>
 
-                <a href="#">
+                <a href="#" class="romantique">
                 <div class="filter-group">
                  <div class="icon">
                   <i class="fas fa-heart"></i> 
@@ -80,7 +81,7 @@
                 </div>
                 </a>
 
-                <a href="#">
+                <a href="#" class="animaux">
                 <div class="filter-group">
                  <div class="icon">
                   <i class="fas fa-dog"></i>
@@ -114,7 +115,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="fas fa-star" style="color: #f2f2f2;"></i>
+                        <i class="fas fa-star" style="color: #F2F2F2;"></i>
                       </div> 
                     </a>
                 
@@ -123,7 +124,7 @@
                     alt="photo hotel du port">
                       <div class="bloc-legende-H">
                         <p class="legende_h">Hôtel du port</p>
-                        <p>Nuit à partir de 25 €</p>
+                        <p>Nuit à partir de 52 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -138,7 +139,7 @@
                     alt="photo hotel les mouettes">
                        <div class="bloc-legende-H">
                         <p class="legende_h">Hôtel Les mouettes</p>
-                        <p>Nuit à partir de 25 €</p>
+                        <p>Nuit à partir de 76 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -152,7 +153,7 @@
                     alt="photo hotel de la mer">
                        <div class="bloc-legende-H">
                         <p class="legende_h">Hôtel de la mer</p>
-                        <p>Nuit à partir de 25 €</p>
+                        <p>Nuit à partir de 46 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -166,7 +167,7 @@
                     alt="photo hotel auberge le panier">
                        <div class="bloc-legende-H">
                         <p class="legende_h">Auberge Le Panier</p>
-                        <p>Nuit à partir de 25 €</p>
+                        <p>Nuit à partir de 23 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -180,7 +181,7 @@
                      alt="photo hotel chez Amina">
                        <div class="bloc-legende-H">
                         <p class="legende_h">Hôtel chez Amina</p>
-                        <p>Nuit à partir de 25 €</p>
+                        <p>Nuit à partir de 96 €</p>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
