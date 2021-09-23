@@ -14,32 +14,30 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 15px 25px 0 25px;
+    margin: 15px 20px 0 15px;
+    font-size: 1.1em;
     }
   .header_bloc .reservia_logo{
     order: 1;
     }
   .header_bloc .principale{
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;;
     order: 3;
     margin-left: 0;
     padding-top: 15px;
     border-bottom: solid #F2F2F2;
     padding-bottom: 14px;  
     }
-  nav ul{
-    padding-left: 0;
-    } 
+  
   .header_bloc .sign-up{ 
     order: 2; 
-    padding-right: 45px;
     }  
   .border-one{
     border-bottom: solid #F2F2F2;
-    padding-left: 20px; 
+    padding-left: 20px;
+    padding-right: 70px;
     padding-bottom: 14px;
-    margin-right: 20px;
   }
   .border-one:hover{
     border-top: none;
@@ -49,9 +47,10 @@
   }
   .border-two{
     border-bottom: solid #F2F2F2;
-    padding-left: 20px;
-    padding-bottom: 14px; 
-    margin-left: 30px;
+    padding-bottom: 14px;
+    padding-right: 75px;
+    padding-left: 25px;
+
   }
   .border-two:hover{
     border-top: none;
@@ -62,17 +61,18 @@
 
   /*Section 1. recherche et filtres*/
   #search{
-    margin: 0 25px 0 25px;
+    margin: 0 20px 0 15px;
   }
   h1{
     margin-top: 40px;
     font-size: 1.4em;
-    padding: 15px;
+    padding: 15px 20px 15px 5px;
   }
   .p_one{
     font-size: 1em;
     padding-top: 5px;
     padding-bottom: 15px;
+    padding-left: 5px;
   }
   #search{
     flex-wrap: wrap;
@@ -84,23 +84,26 @@
   }
   .map{
     font-size: 1.3em;
-    width: 25px;
-    height: 20px;
-    padding-right: 15px;
+    width: 15px;
+    height: 15px;
+    padding-right: 10px;
     padding-bottom: 15px;;
   }
   .fa-map-marker-alt{
-    padding-left: 9px;
-    padding-top: 8px;
+    padding-right: 15px;
+    padding-bottom: 10px;
   }
   input{ 
-    opacity: 0.3;
-    padding-left: 10px; 
+    padding-left: 15px; 
+    width: 230px;
+    border: 1px solid #F2F2F2;
+    border-right: none;
+    height: 52px;
   }
   .test{
-    width: 55px;
-    height: 60px;
-    border-radius: 10px;
+    width: 50px;
+    height: 52px;
+    border-radius: 15px;
     font-size: 20px;
   }
   .form button i{
@@ -114,42 +117,42 @@
     display: flex; 
     align-self: flex-start;
     padding-left: 5px;
-    margin-bottom: 115px;
+    margin-bottom: 5px;
     position: absolute;
   }
   #filters{
     display: flex; 
     flex-wrap: wrap;
+    font-size: 0.90em;
   }
   .economique, .familial{
-    margin-top: 45px;
-  }
-  .romantique, .animaux{
-    margin-top: 10px;
+   padding-top: 35px;
   }
   .familial{
     padding-left: 20px;
+    width: 32%;
   }
   .filter-group{
+    margin-right: 0;
     margin-left: 5px;
-    margin-top: 0;
+    margin-top: 5px;
     position: relative; 
-    width: 82%;
-    height: 33px;
-    font-size: 1.1em;
+    width: 85%;
+    height: 30px;
+    padding-right: 10px;
   }
   .filter-group:hover{
-    transform: scale(1.11);
+    transform: none;
   }
   .filter-group .icon{
-   padding: 10.5px;
-   font-size: 0.9em;
+   padding: 15px;
+   font-size: 1em;
   }
   .p_two{
     font-size: 0.95em;
   }
   #information{
-    padding: 10px;
+    padding: 5px 15px 5px 5px;
   }
   /*Section 2. Hébergement*/
   #accommodation{
@@ -197,6 +200,9 @@
     height: 130px;
     border-radius: 18px;
   }
+  .popbox:hover{
+    transform: none;
+  }
   .image{
     object-fit: cover;
     width: 85%;
@@ -235,9 +241,12 @@
     flex-wrap: wrap;
     border-radius: 25px;
     width: 92%;
-    height: 195px;
+    height: 187px;
     margin-right: 15px;
     margin-left: 15px;
+  }
+  .cardsbox:hover{
+    transform: none;
   }
   .picture{
     object-fit: cover;
@@ -265,6 +274,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 30px;
   }
   #activities h2{
     font-size: 1.3em;
@@ -283,37 +293,44 @@
     width: 100%;
     height: 175px;
   }
+  .box-A:hover{
+    transform: none;
+  }
   .box-A  .legende_L{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 15px;
   }
-  .small-box1, .small-box2{
-    display: block;
-  }
-  .box-B1 .box-B2{
+  .box-B1, .box-B2{
     margin-bottom: 30px;
-    width: 92%;
-    height: 120px;
+    width: 100%;
+    height: 180px;
     padding: 0;
+  }
+  .box-B1:hover, .box-B2:hover{
+    transform: none;
+  }
+  .box-B1 .legende_L, .box-B2 .legende_L{
+    padding-top: 0;
+    padding-bottom: 20px;
   }
   .large_image{
     object-fit: cover;
     width: 100%;
-    height: 130px;
+    height: 140px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
   .small_image {
     object-fit: cover;
     width: 100%;
-    height: 120px;
+    height: 140px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
  .small_image_a, .small_image_b{
     object-fit: cover;
     width: 100%;
-    height: 120px;
+    height: 140px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
