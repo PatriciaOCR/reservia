@@ -168,11 +168,15 @@ a{
   right: 20px;
   border-radius : 50px;
   background-color: #DEEBFF 
-  }
+}
 .filter-group:hover .icon{
   background-color: #0065FC;
   color:  #DEEBFF;
-  }
+}
+.filter-group h3{
+  position: relative;
+  right: 5px;
+}
 #information{
   display: flex;  
   margin-top: 15px;
@@ -308,7 +312,6 @@ aside{
 }
 .popbox{
   display: flex;
-  align-items: center;
   border: 5px  white solid;
   box-shadow: 6px 6px 6px #ceccccec;
   background-color: #FFFFFF;
@@ -322,17 +325,17 @@ aside{
 }
 .image{
   object-fit: cover;
+  overflow: hidden;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 70%;
+  min-width: 36%;
   height: 120px;
-  overflow: hidden;
 }
 .bloc-legende{
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  padding-left: 10%;
+  padding-right: 20px;
+  padding-left: 5%;
 }
 .legende{
   color: black;
