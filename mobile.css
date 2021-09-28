@@ -48,8 +48,8 @@
   .border-two{
     border-bottom: solid #F2F2F2;
     padding-bottom: 14px;
-    padding-right: 75px;
-    padding-left: 25px;
+    padding-right: 30px;
+    padding-left: 30px;
 
   }
   .border-two:hover{
@@ -58,7 +58,9 @@
     border-width: 2px;
     color: #0065FC;
   }
-
+  nav ul{
+    padding-right: 0;
+  }
   /*Section 1. recherche et filtres*/
   #search{
     margin: 0 20px 0 15px;
@@ -114,14 +116,12 @@
   }
 /*Filtres*/
   .title{
-    display: flex; 
     align-self: flex-start;
     padding-left: 5px;
     margin-bottom: 5px;
     position: absolute;
   }
-  #filters{
-    display: flex; 
+  #filters{ 
     flex-wrap: wrap;
     font-size: 0.90em;
   }
@@ -160,17 +160,14 @@
   }
   /*Section 2. Hébergement*/
   #accommodation{
-    display:flex;
     flex-direction: column-reverse;
     width: 100%;
-    height: auto;
     margin-right:0;
     margin-left:0;
   }
   /*Populaire*/
   aside{
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 5px 0 5px;
@@ -199,7 +196,6 @@
     font-size: 1.3em;
   }
   .popbox{
-    display: flex;
     width: 94%;
     height: 130px;
     border-radius: 18px;
@@ -226,26 +222,23 @@
 
 /*Hébergement général*/
   #hostels-wrapper{
-    display: flex;
     flex-flow: row wrap;
     width: 100%;
     background-color: #FFFFFF;
     margin-right: 0;
   }
   #cards{
-    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     margin-top: 15px;
   }
   .cardsbox{
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 25px;
     width: 92%;
-    height: 187px;
+    height: 188px;
     margin-right: 15px;
     margin-left: 15px;
   }
@@ -273,8 +266,7 @@
     padding-left: 25px;
   }
   /*Section 3. activités*/
-  #activities{
-    display: flex;
+  #activities{ 
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
@@ -285,9 +277,8 @@
     padding-left: 25px;
   }
   #container{
-    display: flex;
     flex-direction: column;
-    width: auto;
+    width: 92%;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -319,6 +310,7 @@
   }
   .large_image{
     object-fit: cover;
+    background-position: top;
     width: 100%;
     height: 140px;
     border-top-left-radius: 10px;
@@ -326,12 +318,14 @@
   }
   .small_image {
     object-fit: cover;
+    background-position: top;
     width: 100%;
     height: 140px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
  .small_image_a, .small_image_b{
+  background-position: top;
     object-fit: cover;
     width: 100%;
     height: 140px;
@@ -340,7 +334,7 @@
   }
   /*Footer*/
   footer{
-    display: flex;
+    
     flex-flow: row wrap;
     width: 100%;
     padding: 15px 0 55px 0;
@@ -381,6 +375,3 @@
     padding-left: 35px;
     padding-bottom: 0;
   }
-
-
-
