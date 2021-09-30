@@ -81,6 +81,7 @@ h1{
   justify-content: flex-start;
   border: 1px transparent solid;
   margin-bottom: 5px;
+  height: 50px;
 }
 .map{ 
   border: 9px transparent solid;
