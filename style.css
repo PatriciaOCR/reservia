@@ -78,9 +78,9 @@ h1{
 }
 .form{
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
   border: 1px transparent solid;
-  margin-bottom: 5px;
+  margin-bottom: px;
   height: 35px;
 }
 .map{ 
@@ -102,6 +102,8 @@ input{
   color: black;
   font-weight: bold;
   font-size: 1.2em;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .form button i{
   display: none;
@@ -131,7 +133,7 @@ input{
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 0;
+  margin-top: 5px;
   margin-bottom: 0;
 }
 #filters h3{
