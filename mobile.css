@@ -87,7 +87,7 @@
   .map{
     font-size: 1.3em;
     width: 15px;
-    height: 15px;
+    height: 19px;
     padding-right: 10px;
     padding-bottom: 15px;;
   }
@@ -103,8 +103,8 @@
     height: 52px;
     background-color: white;
   }
-  input button .i-fa-search{
-    display: hidden;
+  input button .fa-search{
+    display: none;
   }
   .test{
     width: 50px;
