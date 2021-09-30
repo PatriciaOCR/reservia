@@ -103,8 +103,8 @@
     height: 52px;
     background-color: white;
   }
-  input button.fa-search{
-    display: none;
+  input button .i-fa-search{
+    display: hidden;
   }
   .test{
     width: 50px;
