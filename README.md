@@ -1,4 +1,4 @@
 ## Lien repository github : 
-https://github.com/patricia-vm/reservia
+https://github.com/patricia-vm/PatriciaVecchio_2_02082021/
 ## Lien github page :
-https://patricia-vm.github.io/reservia
+https://patricia-vm.github.io/PatriciaVecchio_2_02082021/
