@@ -108,8 +108,8 @@
     border-radius: 15px;
     font-size: 20px;
   }
-  .form button i{
-    display: block;
+  .form button .fa-search{
+    display: inline;
   }
   .search_text{
     display: none;
@@ -157,7 +157,7 @@
     font-size: 0.96em;
   }
   #information{
-    padding: 5px 15px 5px 5px;
+    padding: 5px 20px 5px 5px;
   }
   /*Section 2. Hébergement*/
   #accommodation{
