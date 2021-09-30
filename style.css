@@ -249,7 +249,7 @@ h2{
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 120%;
+  width: 100%;
   height: 105px;
 }
 .legende_h{
@@ -350,7 +350,6 @@ aside{
 #activities{
   width: 100%;
   margin: 25px 0 70px;
-  height: auto;
 }  
 #activities_title{
   padding-left: 2px;
@@ -402,6 +401,7 @@ aside{
 }
 .small_image{
   object-fit: cover;
+  background-position: top;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
   width: 320px;
@@ -409,23 +409,26 @@ aside{
 }
 .small_image_a{
   object-fit: cover;
+  background-position: top;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 310px;
+  width: 320px;
   height: 190px;
 }
 .small_image_b{
   object-fit: cover;
+  background-position: top;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  width: 310px;
+  width: 320px;
   height: 90px;
 }
 .large_image{
   object-fit: cover;
+  background-position: top;
   border-top-left-radius: 6%;
   border-top-right-radius: 6%;
-  width: 310px;
+  width: 320px;
   height: 360px;
 }
 .legende_L{

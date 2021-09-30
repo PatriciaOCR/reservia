@@ -46,7 +46,11 @@
     right: 10px;
 }
 .familial{
-    margin-right: 15px;
+   margin-right: 15px;
+
+}
+.romantique{
+    margin-bottom: 0;
 }
 /*Section 2 :Hébergement*/
 #accommodation{
@@ -169,6 +173,7 @@ aside{
 }
 .large_image{
     object-fit: cover;
+    background-position: top;
     width: 290px;
     height: 375px;
 }
@@ -181,6 +186,7 @@ aside{
 }
 .small_image, .small_image_a,.small_image_b{
     object-fit: cover;
+    background-position: top;
     width: 290px;
     height: 155px; 
 }

@@ -115,29 +115,30 @@
     display: none;
   }
 /*Filtres*/
+#filters{ 
+  flex-wrap: wrap;
+  font-size: 0.90em;
+ 
+}
   .title{
     align-self: flex-start;
     padding-left: 5px;
-    margin-bottom: 5px;
     position: absolute;
   }
-  #filters{ 
-    flex-wrap: wrap;
-    font-size: 0.90em;
-  }
   .economique, .familial{
-   padding-top: 35px;
+    margin-top: 5px;
   }
   .familial{
-    padding-left: 20px;
-    width: 32%;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 33%;
   }
   .filter-group{
     margin-right: 0;
     margin-left: 5px;
-    margin-top: 5px;
-    position: relative; 
-    width: 85%;
+    margin-top: 35px;
+    margin-bottom: 0;
+    position: relative;   
     height: 30px;
     padding-right: 10px;
   }
@@ -150,7 +151,7 @@
   }
   .filter-group h3{
     position: relative;
-    right: 10px;
+    right: 15px;
   }
   .p_two{
     font-size: 0.96em;
