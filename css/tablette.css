@@ -86,7 +86,7 @@ aside{
     display: flex;
     flex-direction: column;
     width: 31.19%;
-    height: 170px;
+    height: 185px;
     margin-bottom: 0;
 }
 .image{
@@ -110,6 +110,7 @@ aside{
     font-weight: bold !important;
 }
 .stars{
+    padding-right: 20px;
     padding-top: 0;
     font-size: 0.85em;
 }
